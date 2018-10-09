@@ -1,4 +1,6 @@
-# CrystalsCollector
+# Unit-4-game
+
+Crystals Collector
 
 1. [Watch the demo](https://youtu.be/yNI0l2FMeCk).
 
