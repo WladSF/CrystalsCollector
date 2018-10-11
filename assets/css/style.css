@@ -1,0 +1,16 @@
+.jumbotron-fluid {
+    text-align: center;
+    
+}
+
+.jumbotron-fluid {
+    background-image: url("../images/crystal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2 {
+    text-align: center;
+    
+
+}
