@@ -16,13 +16,9 @@ var crystal1 = Math.floor(Math.random () * 12 + 1);
 var crystal2 = Math.floor(Math.random () * 12 + 1);
 var crystal3 = Math.floor(Math.random () * 12 + 1);
 var crystal4 = Math.floor(Math.random () * 12 + 1);
+console.log(Math.floor((Math.random () * 111 ) + 10));
 
 //Once HTML has loaded, run jQuery / JS
-console.log(Math.floor((Math.random () * 111 ) + 10));
-console.log(Math.floor((Math.random () * 111 ) + 10));
-console.log(Math.floor((Math.random () * 111 ) + 10));
-console.log(Math.floor((Math.random () * 111 ) + 10));
-console.log(Math.floor((Math.random () * 111 ) + 10));
 $(document).ready (function () {
     
      var randomNum = Math.floor((Math.random () * 120) + 19);
@@ -46,9 +42,6 @@ $(document).ready (function () {
            console.log("userScore", userScore);
        });
 });
-
-
-
 
 
 
