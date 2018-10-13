@@ -3,7 +3,7 @@
 var userScore = 0;
 
 //Variable that will store the computer's choice of a random number//
-var randomNum = 0;
+var randomNum;
 
 //Variable for when the user wins//
 var wins = 0;
@@ -16,12 +16,27 @@ var crystal1 = Math.floor(Math.random () * 12 + 1);
 var crystal2 = Math.floor(Math.random () * 12 + 1);
 var crystal3 = Math.floor(Math.random () * 12 + 1);
 var crystal4 = Math.floor(Math.random () * 12 + 1);
-console.log(Math.floor((Math.random () * 111 ) + 10));
+// console.log(Math.floor(Math.random () * 12 + 1));
 
 //Once HTML has loaded, run jQuery / JS
 $(document).ready (function () {
+
+    //Function to reset the game//
+function reset () {
+    crystal1 = Math.floor(Math.random () * 12 + 1);
+    crystal2 = Math.floor(Math.random () * 12 + 1);
+    crystal3 = Math.floor(Math.random () * 12 + 1);
+    crystal4 = Math.floor(Math.random () * 12 + 1);
+    randomNum = Math.floor(Math.random () * (120 - 19 + 1)) +19;
+    userScore = 0;
+    $("#targetNum").text("randomNum");
+    $("#totalScore").text("userScore");
+//     console.log("randomNum", Math.floor(Math.random () * (120 - 19 + 1)) +19);
+}
+
+reset ();
     
-     var randomNum = Math.floor((Math.random () * 120) + 19);
+     var randomNum = Math.floor(Math.random () * 120 - 19 + 1) +19;
      $("#pic1").on("click", function() {
         userScore += crystal1;
        console.log("userScore", userScore);
@@ -43,28 +58,26 @@ $(document).ready (function () {
        });
 });
 
-
-
-if (userScore === randomNum) {
-    alert ("You won!");
-    wins++ ;
-}
-
-else if (userScore > randomNum) {
-     alert ("You lost!");
-    losses++;
-}
-
 function compareScore(){
-    if(userScore === randomNum) {
+
+    if (userScore === randomNum) {
         wins++;
         alert("You won");
-        // Update ui
-    } else if(userScore > randomNum){
+        $("#totalWins").html("Wins:" + wins) // Update ui
+        reset ();
+
+    } 
+    
+    else if (userScore > randomNum){
         losses++;
         alert("You lost");
-        // update Ui
-    } else {
+        $("#totalLosses").text(losses) // update Ui
+        reset ();
+
+    } 
+    
+    else {
         // update ui
     }
 }
+
