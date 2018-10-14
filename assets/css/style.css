@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    font-family: righteous;
+    font-family: righteous;   
 }
 
 .words {
@@ -44,9 +44,18 @@ h2 {
 #box {
     border: 2px solid black;
     width: 550px;
-    height: 330px;
+    height: 310px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
     background-color: thistle
 }
+
+ button.btn.btn-primary {
+     border-radius: 15px;
+     margin-left: 200px;
+     border-radius: 15px;
+     background-color: lavenderblush;
+     color: black;
+     border: 3px solid, black;
+ }
