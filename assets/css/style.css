@@ -1,19 +1,52 @@
-.jumbotron-fluid {
-    text-align: center;
-    
-}
 
 .jumbotron-fluid {
     background-image: url("../images/crystal.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
+    font-family: righteous;
+}
+
+.words {
+    text-align: center;
+    font-family: righteous;    
 }
 
 h2 {
     text-align: center;
-    
+    font-family: righteous;  
+    border: 2px solid black;
+    width: 200px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    background-color: mistyrose
+}
+
+#targetNum {
+    text-align: center;
+    font-family: righteous;  
+    border: 2px solid black;
+    width: 450px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    background-color: lavenderblush;
+    font-size: 40px;
 }
 
 .pics {
     text-align: center;
+}
+
+#box {
+    border: 2px solid black;
+    width: 550px;
+    height: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    background-color: thistle
 }
