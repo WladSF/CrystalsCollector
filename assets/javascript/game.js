@@ -31,8 +31,6 @@ $(document).ready(function () {
 
     reset();
 
-    $("#btn.btn-primary").on("click", reset);
-
     function compareScore() {
         // console.log(userScore);
         if (userScore === randomNum) {
