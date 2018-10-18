@@ -6,13 +6,6 @@ var randomNum;
 var wins = 0;
 var losses = 0;
 
-//Variables for each crystal to obtain a random number between 1 and 12//
-var crystal1 = Math.floor(Math.random() * 12 + 1);
-var crystal2 = Math.floor(Math.random() * 12 + 1);
-var crystal3 = Math.floor(Math.random() * 12 + 1);
-var crystal4 = Math.floor(Math.random() * 12 + 1);
-// console.log(Math.floor(Math.random () * 12 + 1));
-
 //Once HTML has loaded, run jQuery / JS
 $(document).ready(function () {
 
